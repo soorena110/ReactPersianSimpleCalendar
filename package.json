@@ -1,0 +1,51 @@
+{
+  "name": "react-persian-simple-calendar",
+  "version": "0.5.1",
+  "description": "A simple good calendar in react.",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "webpack-dev-server -d --env.dev",
+    "build": "npm run clean & webpack -p --env.prod",
+    "postbuild": "tsc --emitDeclarationOnly --declaration",
+    "deploy": "npm run build & npm run build:dev & npm run postbuild & npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soorena110/ReactPersianSimpleCalendar.git"
+  },
+  "keywords": [
+    "date",
+    "datepicker",
+    "shamsi",
+    "react shamsi datepicker",
+    "datepicker-component",
+    "calendar",
+    "persian",
+    "react"
+  ],
+  "author": "MohammadReza Azarang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soorena110/ReactPersianSimpleCalendar/issues"
+  },
+  "homepage": "https://github.com/soorena110/ReactPersianSimpleCalendar#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "style-loader": "^1.0.0",
+    "@types/react": "^16.9.3",
+    "react": "^16.10.1",
+    "@types/react-dom": "^16.9.1",
+    "react-dom": "^16.10.1"
+  },
+  "dependencies": {
+    "persian-info": "^0.8.0"
+  }
+}

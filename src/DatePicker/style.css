@@ -1,0 +1,109 @@
+.datepicker {
+    color: gray;
+    direction: rtl;
+    width: 240px;
+    padding-bottom: 12px;
+    text-align:center;
+}
+
+.datepicker-header {
+    padding: 5px;
+    font-weight: bold;
+    color: gray;
+    direction: ltr;
+}
+
+.datepicker-header-text {
+    padding-top: 2px;
+    display: block;
+}
+
+.datepicker-btn, .datepicker-btn-2, .datepicker-btn-3 {
+    color: gray;
+    border: solid 1px lightgray;
+    float: left;
+    height: 22px;
+    width: 27px;
+    margin-left: 3px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datepicker-btn-2, .datepicker-btn-3 {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: auto;
+}
+
+.datepicker-btn-3 {
+    float: none;
+}
+
+.datepicker-btn:hover, .datepicker-btn-2:hover, .datepicker-btn-3:hover {
+    border-color: deepskyblue;
+    color: deepskyblue;
+}
+
+.datepicker-week-name {
+    border-top: double 3px #eee;
+}
+
+.datepicker-week-name > span, .datepicker-week > span {
+    width: 12%;
+    display: inline-block;
+    height: 26px;
+}
+
+.datepicker-week-name > span:not(:last-child), .datepicker-week > span:not(:last-child) {
+    margin: 1px;
+}
+
+.datepicker-week-name > span {
+    font-weight: bold;
+    color: #bbb;
+    border-bottom: solid 1px #eee;
+}
+
+.datepicker-week > span {
+    padding-top: 2px;
+    vertical-align: central;
+    border: solid 1px #eee;
+    cursor: pointer;
+}
+
+.datepicker-week > span:not(.off):hover {
+    outline: solid 1px deepskyblue;
+    border: solid 1px deepskyblue;
+    color: deepskyblue;
+    background: #f2fafc;
+    text-shadow: 0px 0px 2px darkcyan;
+}
+
+.datepicker-week > span.today {
+    background: #dffedf;
+    border-color: #b5fbb5;
+    font-weight: bold;
+}
+
+.datepicker-week > span.off {
+    opacity: .8;
+    color: #eee;
+    cursor: default;
+}
+
+.datepicker-week > span.selected {
+    background: #fef4d6;
+    border-color: orange;
+    cursor: default;
+    color: orangered;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px red;
+    padding-top: 1px;
+}
+
+.datepicker-tail {
+    margin-top: 2px;
+    padding: 3px;
+}
