@@ -1,6 +1,6 @@
 {
   "name": "react-persian-simple-calendar",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A simple good calendar in react.",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
