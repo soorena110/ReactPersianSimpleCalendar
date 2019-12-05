@@ -9,7 +9,7 @@ class MainApplication extends React.Component {
 
     render() {
         return <div>
-            <div><DatePicker selectedDay="1398/8/9"/></div>
+            <DatePicker selectedDay="1398/8/9" onDaySelected={event => console.log(event.selectedDay)}/>
         </div>
     }
 }

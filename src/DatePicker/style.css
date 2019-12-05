@@ -1,16 +1,17 @@
 .datepicker {
     color: gray;
-    direction: rtl;
+    direction: rtl !important;
     width: 240px;
     padding-bottom: 12px;
-    text-align:center;
+    text-align: center;
 }
 
 .datepicker-header {
     padding: 5px;
     font-weight: bold;
     color: gray;
-    direction: ltr;
+    direction: ltr !important;
+    display: block;
 }
 
 .datepicker-header-text {
@@ -29,6 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .datepicker-btn-2, .datepicker-btn-3 {

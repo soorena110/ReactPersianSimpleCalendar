@@ -43,7 +43,8 @@
     "@types/react": "^16.9.3",
     "react": "^16.10.1",
     "@types/react-dom": "^16.9.1",
-    "react-dom": "^16.10.1"
+    "react-dom": "^16.10.1",
+    "css-loader": "^3.2.1"
   },
   "dependencies": {
     "persian-info": "^0.8.0"

@@ -63,6 +63,10 @@ export default class DatePicker extends React.Component<DatePickerProps, DatePic
             const selectedDay = {year: parseInt(sp[0]), month: parseInt(sp[1]), day: parseInt(sp[2])};
             this.setState({selectedDay})
         }
+        return {}
+    }
+
+    componentDidUpdate() {
     }
 
     //#endregion
@@ -176,8 +180,8 @@ export default class DatePicker extends React.Component<DatePickerProps, DatePic
     }
 
     private createDaysRows() {
-        const fday = Persian.date.getJalaliMonthFirstWeekDay(this.state.showingDate.year, this.state.showingDate.month + 1);
-        const mCount = Persian.date.getJalaliMonthDaysCount(this.state.showingDate.year, this.state.showingDate.month + 1);
+        const fday = Persian.date.getJalaliMonthFirstWeekDay(this.state.showingDate.year, this.state.showingDate.month);
+        const mCount = Persian.date.getJalaliMonthDaysCount(this.state.showingDate.year, this.state.showingDate.month);
         const prevMCount = Persian.date.getJalaliMonthDaysCount(this.state.showingDate.year, this.state.showingDate.month);
 
         const rows = [];
